@@ -12,7 +12,9 @@ dependencies:
   - widgetsnbextension==3.2.1
   - jupyter_contrib_nbextensions==0.5.0
   # C++ Notebooks
-  - xeus-cling==0.4.10
+  # NOTE: xeus-cling is pinned to build number 1000 because it isn't working in MyBinder, check this issue:
+  # https://github.com/QuantStack/xeus-cling/issues/194
+  - xeus-cling=0.4.10=he860b03_1000
   - cling==0.5
   - xeus==0.18.1
 
@@ -30,4 +32,3 @@ dependencies:
   # C++ packages
   - eigen==3.3.7
   - clangdev==5.0.0  # 6.0.0 isn't yet supported by `cling` in QuantStack channel
-
